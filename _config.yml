@@ -1,5 +1,5 @@
-locale                   : "en"
-title                    : "Site Name"
+locale: "en"
+title: "Site Name"
 
 collections:
   press:
@@ -10,12 +10,11 @@ collections:
     output: true
 
 exclude:
- - package-lock.json
- - package.json
- - postcss.config.js
- - tailwind.config.js
- - .nova
- 
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+
 permalink: pretty
 
 future: true

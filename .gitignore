@@ -15,3 +15,9 @@ vendor/
 
 ### macOS ###
 *.DS_Store
+
+.ruby-lsp
+jekyll_notes.md
+yarn.lock
+Gemfile.lock
+.zed
