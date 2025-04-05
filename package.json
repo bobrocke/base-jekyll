@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "scripts": {
-    "serve": "bundle exec jekyll serve -l",
+    "serve": "bundle exec jekyll serve -l -D",
     "clean": "rm -rf _site"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 locale: "en"
-title: "Site Name"
+title: "Bob Rockefeller"
 
 collections:
   press:
@@ -9,12 +9,32 @@ collections:
     sort_by: year
     output: true
 
+plugins:
+  - jekyll-paginate-v2
+
 exclude:
   - package-lock.json
   - package.json
   - postcss.config.js
   - tailwind.config.js
+  - Gemfile
+  - Gemfile.lock
 
-permalink: pretty
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      description:
+      image:
+      category:
+      tags:
+    posts:
+      description:
+      image:
+      category:
+      tags:
 
-future: true
+pagination:
+  enabled: true
+  per_page: 4
+  extension:
+  indexpage:
