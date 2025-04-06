@@ -15,3 +15,5 @@ group :jekyll_plugins do
 end
 
 gem "kramdown-syntax-coderay", "~> 1.0"
+gem "rubocop"
+gem "faraday-retry"

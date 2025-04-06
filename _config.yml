@@ -1,14 +1,6 @@
 locale: "en"
 title: "Bob Rockefeller"
 
-collections:
-  press:
-    sort_by: date
-    output: true
-  donations:
-    sort_by: year
-    output: true
-
 plugins:
   - jekyll-paginate-v2
 
@@ -38,3 +30,4 @@ pagination:
   per_page: 4
   extension:
   indexpage:
+  sort_reverse: true
