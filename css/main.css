@@ -2,12 +2,22 @@
 ---
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../../node_modules/flowbite";
 
-@layer utilities {
+@theme {
+  --font-sans: "PT Sans", "sans-serif";
+  --font-serif: "PT Serif", "serif";
+}
+
+figcaption {
+  text-align: center !important;
+  font-size: 0.85rem;
+  margin-top: 0 !important;
 }
 
 @config "../../tailwind.config.js";

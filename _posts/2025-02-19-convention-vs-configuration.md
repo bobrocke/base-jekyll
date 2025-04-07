@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Convention vs. Configuration
-date: 2025-02-19 12:09 -0500
-description:
+date: 2025-02-19 12:09:00
+summary: Ruby on Rails is well known for its philosophy of _convention over configuration_. And there are definitely benefits to that approach. But are there also significant disadvantages?
 image:
-category:
+categories: [Web Development]
 tags:
 ---
 
@@ -18,13 +18,13 @@ Less code means fewer places for mistakes and faster reading. But it also means 
 
 A programmer with a strong background in other frameworks will take a while to get up to speed with Rails, but an experienced Rails developer understands right away. I tend to jump around from one framework to another experimenting and then come back to Rails needing to relearn those conventions. Laravel and Django code may be more verbose, but its meaning is clearer because everything is spelled out.
 
-Here's another example in how Laravel and Rails use their database abstractions (Eloquent ORM in Laravel and Active Record in Rails). To access the first record of a database and assign it to a variable, Laravel uses
+Here's an example of how Laravel and Rails use their database abstractions (Eloquent ORM in Laravel and Active Record in Rails). To access the first record of a database and assign it to a variable, Laravel uses:
 
 ```php
 $color = DB::table("colors")->find(1);
 ```
 
--- go to the database table `colors` and find the first record. In Rails, that's
+-- go to the database table `colors` and find the first record. In Rails, that's:
 
 ```ruby
 @color = Color.first
@@ -32,13 +32,13 @@ $color = DB::table("colors")->find(1);
 
 Rails 'knows' there's a table named `Color` in the database and gets the first record.
 
-Creating a Laravel named Route is
+Creating a Laravel named Route is:
 
 ```php
 Route::get("/colors", [ColorController::class, "index"])->name("colors");
 ```
 
--- the url `/colors` routes to the ColorController's `index` method and is named `colors`. For Rails you use
+-- the url `/colors` routes to the ColorController's `index` method and is named `colors`. For Rails you use:
 
 ```ruby
 get "colors", to: "colors#colors"

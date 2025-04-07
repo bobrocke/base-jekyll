@@ -15,12 +15,12 @@ exclude:
 jekyll_compose:
   default_front_matter:
     drafts:
-      description:
+      summary:
       image:
       category:
       tags:
     posts:
-      description:
+      summary:
       image:
       category:
       tags:
@@ -31,3 +31,13 @@ pagination:
   extension:
   indexpage:
   sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+defaults:
+  - scope:
+      path: "_posts" # an empty string here means all files in the project
+    values:
+      layout: "post"
+      render_with_liquid: false

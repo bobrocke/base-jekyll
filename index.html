@@ -7,33 +7,19 @@ pagination:
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <div class="post">
-      <h1 class="post-title">
-        <a href="{{ post.url | absolute_url }}">
-          {{ post.title }}
-        </a>
-      </h1>
+    <div class="mx-6 mt-8">
+      <h2 class="font-serif text-xl hover:text-red-600 md:text-4xl">
+        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+      </h2>
 
-      <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
-      <span class="post-date">{{ post.date | date_to_string: "ordinal", "US" }}</span>
-      {{ post.excerpt }}
+      {% include post-meta.html post=post %}
+
+      <div class="max-w-none prose">
+        {{ post.excerpt }}
+      </div>
     </div>
   {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+
+{% include pagination.html paginator=paginator %}

@@ -1,0 +1,11 @@
+<div class="text-xs md:text-sm mb-3 mt-1">
+  <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;{{ include.post.date | date_to_string: "ordinal", "US" }}
+  {% if include.post.lastmod %}
+    &nbsp;&nbsp;Last Edited: {{ include.post.lastmod | date_to_string: "ordinal", "US" }}
+  {% endif %}
+  {% if include.post.categories %}
+    {% for category in include.post.categories %}
+      &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-folder"></i>&nbsp;{{ category }}
+    {% endfor %}
+  {% endif %}
+</div>
