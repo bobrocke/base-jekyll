@@ -1,16 +1,16 @@
 locale: "en"
 title: "Bob Rockefeller"
+excerpt_separator: <!--more-->
 
-plugins:
-  - jekyll-paginate-v2
+tailwindcss:
+  css_path: "./_tailwind.css"
 
 exclude:
-  - package-lock.json
+  - yarn.json
   - package.json
-  - postcss.config.js
-  - tailwind.config.js
   - Gemfile
   - Gemfile.lock
+  - .gitignore
 
 jekyll_compose:
   default_front_matter:
