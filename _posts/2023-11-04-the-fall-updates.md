@@ -11,7 +11,9 @@ tags: []
 
 [Capture One](https://www.captureone.com/en), [Lightroom Classic](https://www.adobe.com/products/photoshop-lightroom-classic.html), [PhotoLab Elite](https://www.dxo.com/dxo-photolab/), and [Photo Raw](https://www.on1.com/products/photo-raw/) have all been updated this Fall. The question for me is whether or not these changes make switching from Lightroom Classic a good choice.
 
-I wrote about my [approach to selecting a post-processing software](https://bobrockefeller.com/photography/photography-software/selecting-a-post-processor/) for my photography earlier. My approach now is the same; what I consider important has not changed. What has changed are the features of the different programs.
+<!--more-->
+
+I wrote about my [approach to selecting post-processing software](selecting-a-post-processor/) for my photography earlier. My approach now is the same; what I consider important has not changed. What has changed are the features of the different programs.
 
 <figure style="display: block; margin: 1em auto 1em auto">
   <img src="/images/wp-content/uploads/2023/10/AI-masking-screen-shot.png" alt="Capture One's AI Masking" >
