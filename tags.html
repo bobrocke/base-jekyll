@@ -1,0 +1,13 @@
+---
+layout: base
+title: Tags
+---
+<h1 class="mx-6 mt-6 md:text-4xl">Tags</h1>
+<div class="mx-6 mt-4 mb-10">
+  {% for tag in site.tags %}
+    <h2 class="mt-2 ml-6 text-xl hover:text-red-600 md:text-2xl">
+    {% capture tagName %}{{tag[0]}}{% endcapture %}
+      <a href="../tag/{{ tagName | slugify }}/index.html">{{ tag[0] }}</a>
+    </h2>
+  {% endfor %}
+</div>

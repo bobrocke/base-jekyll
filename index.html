@@ -4,22 +4,19 @@ title: Home
 pagination:
   enabled: true
 ---
+{% for post in paginator.posts %}
+  <div class="mx-6 mt-8">
+    <h2 class="font-serif text-xl hover:text-red-600 md:text-4xl">
+      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+    </h2>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <div class="mx-6 mt-8">
-      <h2 class="font-serif text-xl hover:text-red-600 md:text-4xl">
-        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-      </h2>
+    {% include post-meta.html post=post %}
 
-      {% include post-meta.html post=post %}
-
-      <div class="max-w-none prose">
-        {{ post.excerpt }}
-      </div>
+    <div class="max-w-none prose">
+      {{ post.excerpt }}
     </div>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}
 
 
 {% include pagination.html paginator=paginator %}

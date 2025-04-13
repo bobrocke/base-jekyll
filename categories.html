@@ -1,0 +1,12 @@
+---
+layout: base
+title: Categories
+---
+<h1 class="mx-6 mt-6 md:text-4xl">Categories</h1>
+<div class="mx-6 mt-4 mb-10">
+  {% for category in site.categories %}
+    <h2 class="mt-2 ml-6 text-xl hover:text-red-600 md:text-2xl">
+      <a href="../category/{{ category[0] | slugify }}">{{ category[0] }}</a>
+    </h2>
+  {% endfor %}
+</div>
