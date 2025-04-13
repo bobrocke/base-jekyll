@@ -5,6 +5,7 @@ gem 'logger', '~> 1.7'
 gem 'webrick', '~> 1.7'
 
 group :jekyll_plugins do
+  gem 'jekyll-archives'
   gem 'jekyll-compose', '~> 0.12'
   gem 'jekyll-paginate-v2'
   gem 'jekyll-seo-tag'

@@ -41,3 +41,11 @@ defaults:
     values:
       layout: "post"
       render_with_liquid: false
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category
+  permalinks:
+    category: "/category/:name/"
