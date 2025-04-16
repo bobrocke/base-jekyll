@@ -26,7 +26,7 @@ Eleventy/11ty
 
 An often reported, stand out feature of Hugo is its speed in generating content. This is not a big site but it takes Hugo only 1.2 seconds to generate 82 pages, 16 paginated pages, and move 45 images. Changing a couple of pages takes Hugo milliseconds to regenerate and serve. It feels almost instant and that makes development pleasant.
 
-As opposed to Jekyll's gems and 11ty's node modules, Hugo is a single binary with no dependencies to manage unless you want to. I've added only [TailwindCSS](https://tailwindcss.com/, [Flowbite](https://flowbite.com/), and [PostCSS](https://postcss.org/)---all popular and well-maintained packages.
+As opposed to Jekyll's gems and 11ty's node modules, Hugo is a single binary with no dependencies to manage unless you want to. I've added only [TailwindCSS](https://tailwindcss.com/), [Flowbite](https://flowbite.com/), and [PostCSS](https://postcss.org/)---all popular and well-maintained packages.
 
 There's built-in support for multiple taxonomy page displays and the posts for each category within. This site uses 'categories' and 'tags', but many more are possible. 11ty can't do that without plugins and extra custom code.
 
